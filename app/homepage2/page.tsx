@@ -7,18 +7,21 @@ import CuisineSection from "./components/CuisineSection";
 import BarSection from "./components/BarSection";
 import ClosingSection from "./components/ClosingSection";
 
-
-
-export default function Home() {
+/**
+ * ANZAR — Home (teal / petrol variant)
+ * Same editorial layout as the main homepage, retuned to Anzar's
+ * deep-teal charte colourway (petrol + gold) instead of wine/burgundy.
+ */
+export default function Home2() {
   return (
     <main>
       <HeroSection />
       <StickyMenu />
       <AboutSection />
-      <ArtistesSection  />
-      <CuisineSection  />
-      <BarSection  />
-      <ClosingSection  />
+      <ArtistesSection />
+      <CuisineSection />
+      <BarSection />
+      <ClosingSection />
     </main>
   );
 }
