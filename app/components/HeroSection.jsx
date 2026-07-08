@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { Archivo } from "next/font/google";
 
@@ -58,7 +57,7 @@ const SOCIAL = [
 
 /* Corner registration mark */
 const Corner = ({ className }) => (
-  <span className={`pointer-events-none absolute z-20 h-4 w-4 border-[#B08035]/40 ${className}`} />
+  <span className={`pointer-events-none absolute z-20 h-4 w-4 border-[#BC8B3A]/40 ${className}`} />
 );
 
 export default function HeroSection() {
@@ -66,15 +65,19 @@ export default function HeroSection() {
     <section
       className={`${mono.variable} relative flex h-[100svh] min-h-[680px] w-full flex-col overflow-hidden bg-[#150609] text-[#EFE7D6]`}
     >
-      {/* Background — settles from a slight scale on load */}
+      {/* Background — looping video, settles from a slight scale on load.
+          Poster (/bg.jpg) shows instantly while the 1.2 MB clip loads. */}
       <div className="absolute inset-0 anzar-settle">
-        <Image
-          src="/bg.jpg"
-          alt="La salle Anzar au crépuscule"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
+        <video
+          className="h-full w-full object-cover object-center"
+          src="/vidbg.mp4"
+          poster="/bg.jpg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-hidden="true"
         />
       </div>
 
@@ -96,18 +99,18 @@ export default function HeroSection() {
 
       {/* ── Left social rail (maquette) ─────────────────────── */}
       <aside className="absolute left-8 top-1/2 z-30 hidden -translate-y-1/2 flex-col items-center gap-6 md:flex">
-        <span className="mb-1 h-14 w-px bg-gradient-to-b from-transparent to-[#B08035]/40" />
+        <span className="mb-1 h-14 w-px bg-gradient-to-b from-transparent to-[#BC8B3A]/40" />
         {SOCIAL.map(({ Icon, href, label }) => (
           <a
             key={label}
             href={href}
             aria-label={label}
-            className="text-[#EFE7D6]/50 transition-all duration-300 hover:-translate-y-0.5 hover:text-[#C99A45]"
+            className="text-[#EFE7D6]/50 transition-all duration-300 hover:-translate-y-0.5 hover:text-[#B87D29]"
           >
             <Icon className="h-[18px] w-[18px]" />
           </a>
         ))}
-        <span className="mt-1 h-14 w-px bg-gradient-to-t from-transparent to-[#B08035]/40" />
+        <span className="mt-1 h-14 w-px bg-gradient-to-t from-transparent to-[#BC8B3A]/40" />
       </aside>
 
       {/* ── Right-edge coordinates + label ──────────────────── */}
@@ -119,8 +122,8 @@ export default function HeroSection() {
 
       {/* ── Headline block, flush-left lower third ──────────── */}
       <div className="relative z-20 mt-auto max-w-5xl px-6 pb-16 md:px-16 md:pb-20">
-        <p className="anzar-fade anzar-d0 mb-6 flex items-center gap-4 font-[family-name:var(--font-mono)] text-[0.62rem] uppercase tracking-[0.4em] text-[#B08035]">
-          <span className="h-px w-8 bg-[#B08035]/60" />
+        <p className="anzar-fade anzar-d0 mb-6 flex items-center gap-4 font-[family-name:var(--font-mono)] text-[0.62rem] uppercase tracking-[0.4em] text-[#BC8B3A]">
+          <span className="h-px w-8 bg-[#BC8B3A]/60" />
           Dîner · Musique · Scène
         </p>
 
@@ -132,7 +135,7 @@ export default function HeroSection() {
             <span className="anzar-line-inner anzar-l2 block">que l&apos;on prévoit.</span>
           </span>
           <span className="anzar-line mt-1 block overflow-hidden md:mt-2">
-            <span className="anzar-line-inner anzar-l3 block text-[#C99A45]">
+            <span className="anzar-line-inner anzar-l3 block text-[#B87D29]">
               Et d&apos;autres qui s&apos;imposent.
             </span>
           </span>
@@ -141,7 +144,7 @@ export default function HeroSection() {
         <div className="anzar-fade anzar-lfoot mt-10 flex flex-col gap-7 sm:flex-row sm:items-center sm:gap-10">
           <Link
             href="/reservation"
-            className="group inline-flex w-fit items-center gap-3 border border-[#B08035]/45 px-8 py-4 font-[family-name:var(--font-mono)] text-[0.68rem] font-medium uppercase tracking-[0.3em] text-[#EFE7D6] transition-colors duration-300 hover:border-[#C99A45] hover:bg-[#B08035]/[0.06]"
+            className="group inline-flex w-fit items-center gap-3 border border-[#BC8B3A]/45 px-8 py-4 font-[family-name:var(--font-mono)] text-[0.68rem] font-medium uppercase tracking-[0.3em] text-[#EFE7D6] transition-colors duration-300 hover:border-[#B87D29] hover:bg-[#BC8B3A]/[0.06]"
           >
             Réserver une table
             <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -149,7 +152,7 @@ export default function HeroSection() {
 
           <p className="font-[family-name:var(--font-mono)] text-[0.66rem] uppercase leading-relaxed tracking-[0.22em] text-[#EFE7D6]/55">
             Mardi — Dimanche
-            <span className="mx-2 text-[#B08035]/50">/</span>
+            <span className="mx-2 text-[#BC8B3A]/50">/</span>
             19:30 — 04:00
           </p>
         </div>
@@ -161,7 +164,7 @@ export default function HeroSection() {
               key={label}
               href={href}
               aria-label={label}
-              className="text-[#EFE7D6]/55 transition-colors hover:text-[#C99A45]"
+              className="text-[#EFE7D6]/55 transition-colors hover:text-[#B87D29]"
             >
               <Icon className="h-[19px] w-[19px]" />
             </a>
@@ -175,7 +178,7 @@ export default function HeroSection() {
           Défiler
         </span>
         <span className="h-9 w-px overflow-hidden bg-[#EFE7D6]/12">
-          <span className="anzar-scroll block h-3 w-px bg-[#B08035]" />
+          <span className="anzar-scroll block h-3 w-px bg-[#BC8B3A]" />
         </span>
       </div>
 

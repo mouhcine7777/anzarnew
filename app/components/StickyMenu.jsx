@@ -85,7 +85,7 @@ export default function Header() {
           {/* Menu trigger */}
           <button
             onClick={() => setOpen(true)}
-            className="group flex items-center gap-3 font-[family-name:var(--font-mono)] text-[0.64rem] font-medium uppercase tracking-[0.32em] text-[#EFE7D6]/80 transition-colors hover:text-[#C99A45]"
+            className="group flex items-center gap-3 font-[family-name:var(--font-mono)] text-[0.64rem] font-medium uppercase tracking-[0.32em] text-[#EFE7D6]/80 transition-colors hover:text-[#B87D29]"
             aria-label="Ouvrir le menu"
           >
             <span className="flex flex-col gap-[5px]">
@@ -112,11 +112,11 @@ export default function Header() {
           {/* Reserve — sits on every page via this header */}
           <Link
             href="/reservation"
-            className="group flex items-center gap-2 font-[family-name:var(--font-mono)] text-[0.64rem] font-medium uppercase tracking-[0.32em] text-[#EFE7D6]/80 transition-colors hover:text-[#C99A45]"
+            className="group flex items-center gap-2 font-[family-name:var(--font-mono)] text-[0.64rem] font-medium uppercase tracking-[0.32em] text-[#EFE7D6]/80 transition-colors hover:text-[#B87D29]"
           >
             <span className="relative flex h-1.5 w-1.5">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#C99A45]/70" />
-              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[#B08035]" />
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#B87D29]/70" />
+              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[#BC8B3A]" />
             </span>
             <span className="hidden sm:inline">Réserver</span>
           </Link>
@@ -142,12 +142,12 @@ export default function Header() {
 
         {/* Top bar inside overlay */}
         <div className="relative flex items-center justify-between px-6 py-6 md:px-12">
-          <span className="font-[family-name:var(--font-mono)] text-[0.62rem] uppercase tracking-[0.34em] text-[#B08035]">
+          <span className="font-[family-name:var(--font-mono)] text-[0.62rem] uppercase tracking-[0.34em] text-[#BC8B3A]">
             Anzar — Tanger
           </span>
           <button
             onClick={() => setOpen(false)}
-            className="group flex items-center gap-3 font-[family-name:var(--font-mono)] text-[0.64rem] uppercase tracking-[0.32em] text-[#EFE7D6]/80 transition-colors hover:text-[#C99A45]"
+            className="group flex items-center gap-3 font-[family-name:var(--font-mono)] text-[0.64rem] uppercase tracking-[0.32em] text-[#EFE7D6]/80 transition-colors hover:text-[#B87D29]"
             aria-label="Fermer le menu"
           >
             Fermer
@@ -167,7 +167,7 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="group flex items-baseline gap-4 border-b border-[#EFE7D6]/8 py-3.5 transition-colors hover:border-[#B08035]/40 md:gap-5 md:py-4"
+                className="group flex items-baseline gap-4 border-b border-[#EFE7D6]/8 py-3.5 transition-colors hover:border-[#BC8B3A]/40 md:gap-5 md:py-4"
                 style={{
                   transitionDelay: open ? `${i * 55 + 120}ms` : "0ms",
                   transform: open ? "translateY(0)" : "translateY(20px)",
@@ -176,10 +176,10 @@ export default function Header() {
                   transitionDuration: "700ms",
                 }}
               >
-                <span className="font-[family-name:var(--font-mono)] text-[0.7rem] tracking-widest text-[#B08035]/70">
+                <span className="font-[family-name:var(--font-mono)] text-[0.7rem] tracking-widest text-[#BC8B3A]/70">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <span className="font-[family-name:var(--font-display)] text-[clamp(1.6rem,5vw,3.6rem)] font-light leading-none tracking-[-0.02em] text-[#EFE7D6] transition-colors group-hover:text-[#C99A45] group-hover:italic">
+                <span className="font-[family-name:var(--font-display)] text-[clamp(1.6rem,5vw,3.6rem)] font-light leading-none tracking-[-0.02em] text-[#EFE7D6] transition-colors group-hover:text-[#B87D29] group-hover:italic">
                   {item.label}
                 </span>
               </Link>
@@ -197,7 +197,7 @@ export default function Header() {
           >
             {/* Adresse — hidden on mobile to keep the menu uncluttered */}
             <div className="hidden md:block">
-              <p className="mb-2 font-[family-name:var(--font-mono)] text-[0.58rem] uppercase tracking-[0.34em] text-[#B08035]">
+              <p className="mb-2 font-[family-name:var(--font-mono)] text-[0.58rem] uppercase tracking-[0.34em] text-[#BC8B3A]">
                 Adresse
               </p>
               <p className="font-[family-name:var(--font-display)] text-lg font-light leading-snug text-[#EFE7D6]/85">
@@ -208,7 +208,7 @@ export default function Header() {
             </div>
 
             <div>
-              <p className="mb-2 font-[family-name:var(--font-mono)] text-[0.58rem] uppercase tracking-[0.34em] text-[#B08035]">
+              <p className="mb-2 font-[family-name:var(--font-mono)] text-[0.58rem] uppercase tracking-[0.34em] text-[#BC8B3A]">
                 Ouverture
               </p>
               <p className="font-[family-name:var(--font-mono)] text-[0.72rem] uppercase leading-relaxed tracking-[0.2em] text-[#EFE7D6]/70">
@@ -217,22 +217,22 @@ export default function Header() {
             </div>
 
             <div>
-              <p className="mb-2 font-[family-name:var(--font-mono)] text-[0.58rem] uppercase tracking-[0.34em] text-[#B08035]">
+              <p className="mb-2 font-[family-name:var(--font-mono)] text-[0.58rem] uppercase tracking-[0.34em] text-[#BC8B3A]">
                 Réservations
               </p>
               <a
                 href="tel:+212666172897"
-                className="font-[family-name:var(--font-display)] text-lg font-light text-[#EFE7D6]/85 transition-colors hover:text-[#C99A45]"
+                className="font-[family-name:var(--font-display)] text-lg font-light text-[#EFE7D6]/85 transition-colors hover:text-[#B87D29]"
               >
                 +212 6 66 17 28 97
               </a>
             </div>
 
             <div className="hidden gap-6 pt-1 font-[family-name:var(--font-mono)] text-[0.6rem] uppercase tracking-[0.24em] text-[#EFE7D6]/55 md:flex">
-              <a href="https://instagram.com" className="transition-colors hover:text-[#C99A45]">
+              <a href="https://instagram.com" className="transition-colors hover:text-[#B87D29]">
                 Instagram
               </a>
-              <a href="mailto:reservations@anzar.com" className="transition-colors hover:text-[#C99A45]">
+              <a href="mailto:reservations@anzar.com" className="transition-colors hover:text-[#B87D29]">
                 Email
               </a>
             </div>
@@ -240,7 +240,7 @@ export default function Header() {
             <Link
               href="/reservation"
               onClick={() => setOpen(false)}
-              className="group mt-2 inline-flex w-fit items-center gap-3 border border-[#B08035]/45 px-7 py-3.5 font-[family-name:var(--font-mono)] text-[0.66rem] font-medium uppercase tracking-[0.3em] text-[#EFE7D6] transition-colors hover:border-[#C99A45] hover:bg-[#B08035]/[0.06]"
+              className="group mt-2 inline-flex w-fit items-center gap-3 border border-[#BC8B3A]/45 px-7 py-3.5 font-[family-name:var(--font-mono)] text-[0.66rem] font-medium uppercase tracking-[0.3em] text-[#EFE7D6] transition-colors hover:border-[#B87D29] hover:bg-[#BC8B3A]/[0.06]"
             >
               Réserver une table
               <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>

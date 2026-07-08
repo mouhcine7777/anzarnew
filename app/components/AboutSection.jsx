@@ -32,7 +32,7 @@ function AmazighStrip({ className = "", id = "anzar-amazigh-u" }) {
     <svg className={className} width="100%" height="100%" preserveAspectRatio="none" aria-hidden="true">
       <defs>
         <pattern id={id} width="46" height="46" patternUnits="userSpaceOnUse">
-          <g fill="none" stroke="#C99A45" strokeWidth="1.1" opacity="0.5">
+          <g fill="none" stroke="#B87D29" strokeWidth="1.1" opacity="0.5">
             <path d="M23 0 L31 11.5 L23 23 L31 34.5 L23 46" />
             <path d="M9 7 l4.5 5.5 -4.5 5.5 -4.5 -5.5 z" />
             <path d="M9 29 l4.5 5.5 -4.5 5.5 -4.5 -5.5 z" />
@@ -91,7 +91,7 @@ export default function UniversSection() {
       <div className="relative mx-auto max-w-4xl text-center">
         {/* Eyebrow */}
         <p
-          className="mb-8 font-[family-name:var(--font-mono)] text-[0.62rem] font-medium uppercase tracking-[0.4em] text-[#B08035]"
+          className="mb-8 font-[family-name:var(--font-mono)] text-[0.62rem] font-medium uppercase tracking-[0.4em] text-[#BC8B3A]"
           style={reveal(0)}
         >
           L&apos;univers d&apos;Anzar
@@ -103,7 +103,7 @@ export default function UniversSection() {
           style={reveal(100)}
         >
           La soirée se révèle{" "}
-          <span className="text-[#C99A45]">par étapes.</span>
+          <span className="text-[#B87D29]">par étapes.</span>
         </h2>
 
         {/* Divider */}
@@ -111,9 +111,9 @@ export default function UniversSection() {
           className="mx-auto my-12 flex items-center justify-center gap-3"
           style={reveal(180)}
         >
-          <span className="h-px w-12 bg-[#B08035]/45" />
-          <span className="h-1 w-1 rotate-45 bg-[#B08035]" />
-          <span className="h-px w-12 bg-[#B08035]/45" />
+          <span className="h-px w-12 bg-[#BC8B3A]/45" />
+          <span className="h-1 w-1 rotate-45 bg-[#BC8B3A]" />
+          <span className="h-px w-12 bg-[#BC8B3A]/45" />
         </div>
 
         {/* Body — single paragraph */}
@@ -134,7 +134,7 @@ export default function UniversSection() {
         <div style={reveal(440)}>
           <Link
             href="/univers"
-            className="group mt-14 inline-flex items-center gap-3 border border-[#B08035]/50 px-8 py-4 font-[family-name:var(--font-mono)] text-[0.68rem] font-medium uppercase tracking-[0.3em] text-[#F5EAD6] transition-colors duration-300 hover:border-[#C99A45] hover:bg-[#B08035] hover:text-[#722F38]"
+            className="group mt-14 inline-flex items-center gap-3 border border-[#BC8B3A]/50 px-8 py-4 font-[family-name:var(--font-mono)] text-[0.68rem] font-medium uppercase tracking-[0.3em] text-[#F5EAD6] transition-colors duration-300 hover:border-[#B87D29] hover:bg-[#BC8B3A] hover:text-[#722F38]"
           >
             Découvrir l&apos;univers
             <span className="transition-transform duration-300 group-hover:translate-x-1">

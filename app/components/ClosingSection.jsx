@@ -140,7 +140,7 @@ export default function ClosingSection() {
 
         <div className="relative mx-auto max-w-2xl px-6">
           <p
-            className="mb-6 font-[family-name:var(--font-mono)] text-[0.62rem] font-medium uppercase tracking-[0.42em] text-[#C99A45]"
+            className="mb-6 font-[family-name:var(--font-mono)] text-[0.62rem] font-medium uppercase tracking-[0.42em] text-[#B87D29]"
             style={vipReveal(80)}
           >
             Salons privés
@@ -150,7 +150,7 @@ export default function ClosingSection() {
             style={vipReveal(180)}
           >
             L&apos;art de recevoir,{" "}
-            <span className="text-[#C99A45]">en toute intimité.</span>
+            <span className="text-[#B87D29]">en toute intimité.</span>
           </h2>
           <p
             className="mx-auto mt-7 max-w-xl font-[family-name:var(--font-body)] text-[1rem] font-light leading-[1.9] text-[#F5EAD6]/85"
@@ -164,7 +164,7 @@ export default function ClosingSection() {
           <div style={vipReveal(430)}>
             <Link
               href="/vip"
-              className="group mt-11 inline-flex items-center gap-3 border border-[#C99A45]/60 bg-[#1E0709]/30 px-9 py-4 font-[family-name:var(--font-mono)] text-[0.68rem] font-medium uppercase tracking-[0.3em] text-[#F5EAD6] backdrop-blur-sm transition-colors duration-300 hover:border-[#C99A45] hover:bg-[#C99A45] hover:text-[#1E0709]"
+              className="group mt-11 inline-flex items-center gap-3 border border-[#B87D29]/60 bg-[#1E0709]/30 px-9 py-4 font-[family-name:var(--font-mono)] text-[0.68rem] font-medium uppercase tracking-[0.3em] text-[#F5EAD6] backdrop-blur-sm transition-colors duration-300 hover:border-[#B87D29] hover:bg-[#B87D29] hover:text-[#1E0709]"
             >
               Réserver votre salon VIP
               <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -174,21 +174,21 @@ export default function ClosingSection() {
       </section>
 
       {/* ══ Dress code + Le Cercle Anzar ═════════════════════ */}
-      <section className="border-t border-[#C99A45]/12 bg-[#1A0709] px-6 py-20 md:px-16">
+      <section className="border-t border-[#B87D29]/12 bg-[#1A0709] px-6 py-20 md:px-16">
         <div className="mx-auto grid max-w-5xl gap-14 md:grid-cols-2 md:gap-24">
           {/* Dress code */}
           <div ref={dressRef}>
-            <p className="mb-5 font-[family-name:var(--font-mono)] text-[0.6rem] uppercase tracking-[0.4em] text-[#C99A45]">
+            <p className="mb-5 font-[family-name:var(--font-mono)] text-[0.6rem] uppercase tracking-[0.4em] text-[#B87D29]">
               Avant de venir
             </p>
             <button
               onClick={() => setDressOpen((v) => !v)}
-              className="group flex items-center gap-3 font-[family-name:var(--font-display)] text-[1.9rem] font-light tracking-tight text-[#F5EAD6] transition-colors hover:text-[#C99A45]"
+              className="group flex items-center gap-3 font-[family-name:var(--font-display)] text-[1.9rem] font-light tracking-tight text-[#F5EAD6] transition-colors hover:text-[#B87D29]"
               aria-expanded={dressOpen}
             >
               Dress code
               <span
-                className={`text-[#C99A45] transition-transform duration-300 ${dressOpen ? "rotate-45" : ""}`}
+                className={`text-[#B87D29] transition-transform duration-300 ${dressOpen ? "rotate-45" : ""}`}
               >
                 +
               </span>
@@ -214,7 +214,7 @@ export default function ClosingSection() {
 
           {/* Le Cercle Anzar */}
           <div>
-            <p className="mb-5 font-[family-name:var(--font-mono)] text-[0.6rem] uppercase tracking-[0.4em] text-[#C99A45]">
+            <p className="mb-5 font-[family-name:var(--font-mono)] text-[0.6rem] uppercase tracking-[0.4em] text-[#B87D29]">
               Rejoindre
             </p>
             <h3 className="font-[family-name:var(--font-display)] text-[1.9rem] font-light tracking-tight text-[#F5EAD6]">
@@ -229,7 +229,7 @@ export default function ClosingSection() {
                 setStatus("idle");
                 setCercleOpen(true);
               }}
-              className="group mt-7 inline-flex items-center gap-3 border border-[#C99A45]/50 px-8 py-3.5 font-[family-name:var(--font-mono)] text-[0.66rem] font-medium uppercase tracking-[0.3em] text-[#F5EAD6] transition-colors duration-300 hover:border-[#C99A45] hover:bg-[#C99A45] hover:text-[#1A0709]"
+              className="group mt-7 inline-flex items-center gap-3 border border-[#B87D29]/50 px-8 py-3.5 font-[family-name:var(--font-mono)] text-[0.66rem] font-medium uppercase tracking-[0.3em] text-[#F5EAD6] transition-colors duration-300 hover:border-[#B87D29] hover:bg-[#B87D29] hover:text-[#1A0709]"
             >
               Rejoindre le Cercle
               <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -239,7 +239,7 @@ export default function ClosingSection() {
       </section>
 
       {/* ══ Footer ═══════════════════════════════════════════ */}
-      <footer className="border-t border-[#C99A45]/12 bg-[#150607] px-6 py-16 md:px-16">
+      <footer className="border-t border-[#B87D29]/12 bg-[#150607] px-6 py-16 md:px-16">
         <div className="mx-auto max-w-6xl">
           {/* Anzar */}
           <div className="flex justify-center">
@@ -248,7 +248,7 @@ export default function ClosingSection() {
 
           <div className="mt-14 grid gap-10 text-center sm:grid-cols-3 sm:text-left">
             <div>
-              <p className="mb-3 font-[family-name:var(--font-mono)] text-[0.56rem] uppercase tracking-[0.34em] text-[#C99A45]">
+              <p className="mb-3 font-[family-name:var(--font-mono)] text-[0.56rem] uppercase tracking-[0.34em] text-[#B87D29]">
                 Adresse
               </p>
               <p className="font-[family-name:var(--font-body)] text-sm font-light leading-relaxed text-[#F5EAD6]/80">
@@ -258,7 +258,7 @@ export default function ClosingSection() {
               </p>
             </div>
             <div>
-              <p className="mb-3 font-[family-name:var(--font-mono)] text-[0.56rem] uppercase tracking-[0.34em] text-[#C99A45]">
+              <p className="mb-3 font-[family-name:var(--font-mono)] text-[0.56rem] uppercase tracking-[0.34em] text-[#B87D29]">
                 Ouverture
               </p>
               <p className="font-[family-name:var(--font-body)] text-sm font-light leading-relaxed text-[#F5EAD6]/80">
@@ -270,22 +270,22 @@ export default function ClosingSection() {
               </p>
             </div>
             <div>
-              <p className="mb-3 font-[family-name:var(--font-mono)] text-[0.56rem] uppercase tracking-[0.34em] text-[#C99A45]">
+              <p className="mb-3 font-[family-name:var(--font-mono)] text-[0.56rem] uppercase tracking-[0.34em] text-[#B87D29]">
                 Réservations &amp; événements
               </p>
               <p className="font-[family-name:var(--font-body)] text-sm font-light leading-relaxed text-[#F5EAD6]/80">
-                <a href="tel:+212666172897" className="hover:text-[#C99A45]">+212 6 66 17 28 97</a>
+                <a href="tel:+212666172897" className="hover:text-[#B87D29]">+212 6 66 17 28 97</a>
                 <br />
-                <a href="tel:+212539336663" className="hover:text-[#C99A45]">+212 5 39 33 66 63</a>
+                <a href="tel:+212539336663" className="hover:text-[#B87D29]">+212 5 39 33 66 63</a>
                 <br />
-                <a href="mailto:reservations@anzar.com" className="hover:text-[#C99A45]">reservations@anzar.com</a>
+                <a href="mailto:reservations@anzar.com" className="hover:text-[#B87D29]">reservations@anzar.com</a>
               </p>
             </div>
           </div>
 
           {/* Autres adresses */}
           <div className="mt-16 border-t border-[#F5EAD6]/10 pt-12 text-center">
-            <p className="font-[family-name:var(--font-mono)] text-[0.6rem] uppercase tracking-[0.4em] text-[#C99A45]">
+            <p className="font-[family-name:var(--font-mono)] text-[0.6rem] uppercase tracking-[0.4em] text-[#B87D29]">
               Découvrez nos autres adresses
             </p>
             <div className="mt-9 flex flex-wrap items-center justify-center gap-x-14 gap-y-8">
@@ -309,9 +309,9 @@ export default function ClosingSection() {
 
           <div className="mt-14 flex flex-col items-center justify-between gap-6 border-t border-[#F5EAD6]/10 pt-8 sm:flex-row">
             <div className="flex items-center gap-6 text-[#F5EAD6]/55">
-              <a href="https://instagram.com" aria-label="Instagram" className="hover:text-[#C99A45]"><Ig className="h-[18px] w-[18px]" /></a>
-              <a href="https://wa.me/212666172897" aria-label="WhatsApp" className="hover:text-[#C99A45]"><Wa className="h-[18px] w-[18px]" /></a>
-              <a href="mailto:reservations@anzar.com" aria-label="Email" className="hover:text-[#C99A45]"><Mail className="h-[18px] w-[18px]" /></a>
+              <a href="https://instagram.com" aria-label="Instagram" className="hover:text-[#B87D29]"><Ig className="h-[18px] w-[18px]" /></a>
+              <a href="https://wa.me/212666172897" aria-label="WhatsApp" className="hover:text-[#B87D29]"><Wa className="h-[18px] w-[18px]" /></a>
+              <a href="mailto:reservations@anzar.com" aria-label="Email" className="hover:text-[#B87D29]"><Mail className="h-[18px] w-[18px]" /></a>
             </div>
             <p className="font-[family-name:var(--font-mono)] text-[0.56rem] uppercase tracking-[0.28em] text-[#F5EAD6]/45">
               © {new Date().getFullYear()} Anzar — Oriental Fine Dining &amp; Atmosphere
@@ -330,21 +330,21 @@ export default function ClosingSection() {
         <div className="absolute inset-0 bg-[#120506]/85 backdrop-blur-sm" onClick={() => setCercleOpen(false)} />
 
         <div
-          className={`relative w-full max-w-md border border-[#C99A45]/25 bg-[#1E0709] p-8 shadow-[0_40px_80px_-30px_rgba(0,0,0,0.7)] transition-all duration-300 md:p-10 ${
+          className={`relative w-full max-w-md border border-[#B87D29]/25 bg-[#1E0709] p-8 shadow-[0_40px_80px_-30px_rgba(0,0,0,0.7)] transition-all duration-300 md:p-10 ${
             cercleOpen ? "translate-y-0 scale-100" : "translate-y-4 scale-95"
           }`}
         >
           <button
             onClick={() => setCercleOpen(false)}
             aria-label="Fermer"
-            className="absolute right-5 top-5 text-[#F5EAD6]/60 transition-colors hover:text-[#C99A45]"
+            className="absolute right-5 top-5 text-[#F5EAD6]/60 transition-colors hover:text-[#B87D29]"
           >
             <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.4">
               <path d="M6 6l12 12M18 6L6 18" />
             </svg>
           </button>
 
-          <p className="mb-3 font-[family-name:var(--font-mono)] text-[0.58rem] uppercase tracking-[0.4em] text-[#C99A45]">
+          <p className="mb-3 font-[family-name:var(--font-mono)] text-[0.58rem] uppercase tracking-[0.4em] text-[#B87D29]">
             Le Cercle Anzar
           </p>
 
@@ -358,7 +358,7 @@ export default function ClosingSection() {
               </p>
               <button
                 onClick={() => setCercleOpen(false)}
-                className="mt-7 border border-[#C99A45]/50 px-7 py-3 font-[family-name:var(--font-mono)] text-[0.64rem] uppercase tracking-[0.3em] text-[#F5EAD6] transition-colors hover:bg-[#C99A45] hover:text-[#1E0709]"
+                className="mt-7 border border-[#B87D29]/50 px-7 py-3 font-[family-name:var(--font-mono)] text-[0.64rem] uppercase tracking-[0.3em] text-[#F5EAD6] transition-colors hover:bg-[#B87D29] hover:text-[#1E0709]"
               >
                 Fermer
               </button>
@@ -379,14 +379,14 @@ export default function ClosingSection() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Adresse e-mail"
-                  className="w-full border border-[#F5EAD6]/20 bg-transparent px-4 py-3 font-[family-name:var(--font-body)] text-sm text-[#F5EAD6] placeholder:text-[#F5EAD6]/40 outline-none transition-colors focus:border-[#C99A45]"
+                  className="w-full border border-[#F5EAD6]/20 bg-transparent px-4 py-3 font-[family-name:var(--font-body)] text-sm text-[#F5EAD6] placeholder:text-[#F5EAD6]/40 outline-none transition-colors focus:border-[#B87D29]"
                 />
                 <input
                   type="tel"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="Téléphone (optionnel)"
-                  className="w-full border border-[#F5EAD6]/20 bg-transparent px-4 py-3 font-[family-name:var(--font-body)] text-sm text-[#F5EAD6] placeholder:text-[#F5EAD6]/40 outline-none transition-colors focus:border-[#C99A45]"
+                  className="w-full border border-[#F5EAD6]/20 bg-transparent px-4 py-3 font-[family-name:var(--font-body)] text-sm text-[#F5EAD6] placeholder:text-[#F5EAD6]/40 outline-none transition-colors focus:border-[#B87D29]"
                 />
 
                 {status === "error" && (
@@ -398,7 +398,7 @@ export default function ClosingSection() {
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className="w-full bg-[#C99A45] px-8 py-3.5 font-[family-name:var(--font-mono)] text-[0.66rem] font-medium uppercase tracking-[0.3em] text-[#1E0709] transition-opacity hover:opacity-90 disabled:opacity-60"
+                  className="w-full bg-[#B87D29] px-8 py-3.5 font-[family-name:var(--font-mono)] text-[0.66rem] font-medium uppercase tracking-[0.3em] text-[#1E0709] transition-opacity hover:opacity-90 disabled:opacity-60"
                 >
                   {status === "loading" ? "Envoi…" : "Rejoindre le Cercle"}
                 </button>

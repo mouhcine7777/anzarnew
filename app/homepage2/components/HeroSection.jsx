@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { Archivo } from "next/font/google";
 
@@ -66,15 +65,19 @@ export default function HeroSection() {
     <section
       className={`${mono.variable} relative flex h-[100svh] min-h-[680px] w-full flex-col overflow-hidden bg-[#07171A] text-[#EFE7D6]`}
     >
-      {/* Background — settles from a slight scale on load */}
+      {/* Background — looping video, settles from a slight scale on load.
+          Poster (/bg.jpg) shows instantly while the 1.2 MB clip loads. */}
       <div className="absolute inset-0 anzar-settle">
-        <Image
-          src="/bg.jpg"
-          alt="La salle Anzar au crépuscule"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
+        <video
+          className="h-full w-full object-cover object-center"
+          src="/vidbg.mp4"
+          poster="/bg.jpg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-hidden="true"
         />
       </div>
 

@@ -69,7 +69,7 @@ export default function ArtistesSection() {
   const CTA = (
     <Link
       href="/artistes"
-      className="group inline-flex items-center gap-3 border border-[#B08035]/50 px-8 py-4 font-[family-name:var(--font-mono)] text-[0.68rem] font-medium uppercase tracking-[0.3em] text-[#F5EAD6] transition-colors duration-300 hover:border-[#C99A45] hover:bg-[#B08035] hover:text-[#3A0F16]"
+      className="group inline-flex items-center gap-3 border border-[#BC8B3A]/50 px-8 py-4 font-[family-name:var(--font-mono)] text-[0.68rem] font-medium uppercase tracking-[0.3em] text-[#F5EAD6] transition-colors duration-300 hover:border-[#B87D29] hover:bg-[#BC8B3A] hover:text-[#3A0F16]"
     >
       Toute la programmation
       <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -87,10 +87,10 @@ export default function ArtistesSection() {
         {/* ── Text (+ desktop list) ───────────────────────── */}
         <div className="md:order-1">
           <p
-            className="mb-6 flex items-center gap-4 font-[family-name:var(--font-mono)] text-[0.62rem] font-medium uppercase tracking-[0.4em] text-[#B08035]"
+            className="mb-6 flex items-center gap-4 font-[family-name:var(--font-mono)] text-[0.62rem] font-medium uppercase tracking-[0.4em] text-[#BC8B3A]"
             style={reveal(80)}
           >
-            <span className="h-px w-8 bg-[#B08035]/60" />
+            <span className="h-px w-8 bg-[#BC8B3A]/60" />
             La programmation
           </p>
 
@@ -99,7 +99,7 @@ export default function ArtistesSection() {
             style={reveal(160)}
           >
             Quand la nuit{" "}
-            <span className="text-[#C99A45]">entre en scène.</span>
+            <span className="text-[#B87D29]">entre en scène.</span>
           </h2>
 
           <p
@@ -124,7 +124,7 @@ export default function ArtistesSection() {
                   >
                     <span
                       className={`font-[family-name:var(--font-mono)] text-[0.7rem] tracking-widest transition-colors ${
-                        on ? "text-[#C99A45]" : "text-[#F5EAD6]/40"
+                        on ? "text-[#B87D29]" : "text-[#F5EAD6]/40"
                       }`}
                     >
                       {String(i + 1).padStart(2, "0")}
@@ -138,13 +138,13 @@ export default function ArtistesSection() {
                     </span>
                     <span
                       className={`font-[family-name:var(--font-mono)] text-[0.58rem] uppercase tracking-[0.28em] transition-colors ${
-                        on ? "text-[#B08035]" : "text-[#F5EAD6]/25"
+                        on ? "text-[#BC8B3A]" : "text-[#F5EAD6]/25"
                       }`}
                     >
                       {a.sub}
                     </span>
                     <span
-                      className={`h-px bg-[#C99A45] transition-all duration-500 ${on ? "w-8" : "w-0"}`}
+                      className={`h-px bg-[#B87D29] transition-all duration-500 ${on ? "w-8" : "w-0"}`}
                     />
                   </button>
                 </li>
@@ -162,8 +162,8 @@ export default function ArtistesSection() {
         <div className="md:order-2" style={reveal(120)}>
           <div className="relative">
             {/* corner brackets */}
-            <span className="pointer-events-none absolute -left-3 -top-3 z-20 hidden h-8 w-8 border-l border-t border-[#B08035]/60 md:block" />
-            <span className="pointer-events-none absolute -bottom-3 -right-3 z-20 hidden h-8 w-8 border-b border-r border-[#B08035]/60 md:block" />
+            <span className="pointer-events-none absolute -left-3 -top-3 z-20 hidden h-8 w-8 border-l border-t border-[#BC8B3A]/60 md:block" />
+            <span className="pointer-events-none absolute -bottom-3 -right-3 z-20 hidden h-8 w-8 border-b border-r border-[#BC8B3A]/60 md:block" />
 
             <div className="relative aspect-[3/4] w-full overflow-hidden bg-[#1A0708] md:aspect-[4/5]">
               {ACTS.map((a, i) => (
@@ -191,8 +191,8 @@ export default function ArtistesSection() {
 
               <div className="absolute inset-x-5 bottom-5">
                 <div className="mb-2 flex items-center gap-3">
-                  <span className="h-px w-6 bg-[#C99A45]" />
-                  <span className="font-[family-name:var(--font-mono)] text-[0.56rem] uppercase tracking-[0.32em] text-[#C99A45]">
+                  <span className="h-px w-6 bg-[#B87D29]" />
+                  <span className="font-[family-name:var(--font-mono)] text-[0.56rem] uppercase tracking-[0.32em] text-[#B87D29]">
                     Sur scène
                   </span>
                 </div>
@@ -215,7 +215,7 @@ export default function ArtistesSection() {
                   key={a.label}
                   onClick={() => setActive(i)}
                   className={`relative aspect-[4/3] overflow-hidden border transition-all ${
-                    on ? "border-[#C99A45]" : "border-transparent opacity-60"
+                    on ? "border-[#B87D29]" : "border-transparent opacity-60"
                   }`}
                   aria-label={a.label}
                 >

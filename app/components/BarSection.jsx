@@ -63,10 +63,10 @@ export default function BarSection() {
         {/* ── Text ────────────────────────────────────────── */}
         <div className="order-2 md:order-1">
           <p
-            className="mb-6 flex items-center gap-4 font-[family-name:var(--font-mono)] text-[0.62rem] font-medium uppercase tracking-[0.4em] text-[#C99A45]"
+            className="mb-6 flex items-center gap-4 font-[family-name:var(--font-mono)] text-[0.62rem] font-medium uppercase tracking-[0.4em] text-[#B87D29]"
             style={reveal(80)}
           >
-            <span className="h-px w-8 bg-[#C99A45]/70" />
+            <span className="h-px w-8 bg-[#B87D29]/70" />
             Les signatures du Bar
           </p>
 
@@ -75,7 +75,7 @@ export default function BarSection() {
             style={reveal(180)}
           >
             L&apos;instant où la soirée prend une{" "}
-            <span className="text-[#C99A45]">nouvelle dimension.</span>
+            <span className="text-[#B87D29]">nouvelle dimension.</span>
           </h2>
 
           <p
@@ -92,7 +92,7 @@ export default function BarSection() {
           <div style={reveal(430)}>
             <Link
               href="/bar"
-              className="group mt-11 inline-flex items-center gap-3 border border-[#C99A45]/50 px-8 py-4 font-[family-name:var(--font-mono)] text-[0.68rem] font-medium uppercase tracking-[0.3em] text-[#F5EAD6] transition-colors duration-300 hover:border-[#C99A45] hover:bg-[#C99A45] hover:text-[#3A0F16]"
+              className="group mt-11 inline-flex items-center gap-3 border border-[#B87D29]/50 px-8 py-4 font-[family-name:var(--font-mono)] text-[0.68rem] font-medium uppercase tracking-[0.3em] text-[#F5EAD6] transition-colors duration-300 hover:border-[#B87D29] hover:bg-[#B87D29] hover:text-[#3A0F16]"
             >
               Découvrir les signatures du bar
               <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -104,11 +104,11 @@ export default function BarSection() {
         <div className="relative order-1 mx-auto w-full max-w-[560px] md:order-2" style={reveal(140)}>
           <div className="relative aspect-square w-full">
             {/* soft glow */}
-            <div className="absolute inset-4 rounded-full bg-[#C99A45]/10 blur-2xl" />
+            <div className="absolute inset-4 rounded-full bg-[#B87D29]/10 blur-2xl" />
 
             {/* outer rotating ring */}
             <svg className="anzar-spin-slow absolute inset-0 h-full w-full" viewBox="0 0 200 200" fill="none" aria-hidden="true">
-              <circle cx="100" cy="100" r="98" stroke="#B08035" strokeWidth="0.5" strokeDasharray="1.5 7" opacity="0.7" />
+              <circle cx="100" cy="100" r="98" stroke="#BC8B3A" strokeWidth="0.5" strokeDasharray="1.5 7" opacity="0.7" />
               {Array.from({ length: 24 }).map((_, i) => {
                 const a = (i / 24) * Math.PI * 2;
                 // Round to a fixed precision so the server- and client-rendered
@@ -118,17 +118,17 @@ export default function BarSection() {
                 const y1 = (100 + Math.sin(a) * 92).toFixed(3);
                 const x2 = (100 + Math.cos(a) * 96).toFixed(3);
                 const y2 = (100 + Math.sin(a) * 96).toFixed(3);
-                return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#B08035" strokeWidth="0.6" opacity="0.6" />;
+                return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#BC8B3A" strokeWidth="0.6" opacity="0.6" />;
               })}
             </svg>
 
             {/* inner counter-rotating dotted ring */}
             <svg className="anzar-spin-rev absolute inset-[4%] h-[92%] w-[92%]" viewBox="0 0 200 200" fill="none" aria-hidden="true">
-              <circle cx="100" cy="100" r="97" stroke="#C99A45" strokeWidth="0.7" strokeDasharray="0.5 9" opacity="0.65" />
+              <circle cx="100" cy="100" r="97" stroke="#B87D29" strokeWidth="0.7" strokeDasharray="0.5 9" opacity="0.65" />
             </svg>
 
             {/* image disc — enlarged */}
-            <div className="absolute inset-[7%] overflow-hidden rounded-full ring-1 ring-[#C99A45]/40">
+            <div className="absolute inset-[7%] overflow-hidden rounded-full ring-1 ring-[#B87D29]/40">
               <Image
                 src="/bar.jpg"
                 alt="Cocktail signature d'Anzar"
@@ -140,7 +140,7 @@ export default function BarSection() {
             </div>
 
             {/* top marker dot */}
-            <span className="absolute left-1/2 top-0 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#C99A45]" />
+            <span className="absolute left-1/2 top-0 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#B87D29]" />
           </div>
         </div>
       </div>

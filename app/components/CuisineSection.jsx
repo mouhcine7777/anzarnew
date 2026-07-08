@@ -40,7 +40,7 @@ function AmazighStrip({ className = "", id = "anzar-amazigh-c" }) {
     <svg className={className} width="100%" height="100%" preserveAspectRatio="none" aria-hidden="true">
       <defs>
         <pattern id={id} width="46" height="46" patternUnits="userSpaceOnUse">
-          <g fill="none" stroke="#C99A45" strokeWidth="1.1" opacity="0.5">
+          <g fill="none" stroke="#B87D29" strokeWidth="1.1" opacity="0.5">
             <path d="M23 0 L31 11.5 L23 23 L31 34.5 L23 46" />
             <path d="M9 7 l4.5 5.5 -4.5 5.5 -4.5 -5.5 z" />
             <path d="M9 29 l4.5 5.5 -4.5 5.5 -4.5 -5.5 z" />
@@ -94,12 +94,12 @@ export default function CuisineSection() {
       {/* ── Text block ──────────────────────────────────── */}
       <div className="relative mx-auto max-w-3xl px-6 text-center md:px-16">
         <p
-          className="mb-6 inline-flex items-center gap-4 font-[family-name:var(--font-mono)] text-[0.62rem] font-medium uppercase tracking-[0.4em] text-[#C99A45]"
+          className="mb-6 inline-flex items-center gap-4 font-[family-name:var(--font-mono)] text-[0.62rem] font-medium uppercase tracking-[0.4em] text-[#B87D29]"
           style={reveal(80)}
         >
-          <span className="h-px w-8 bg-[#C99A45]/60" />
+          <span className="h-px w-8 bg-[#B87D29]/60" />
           L&apos;art du Chef
-          <span className="h-px w-8 bg-[#C99A45]/60" />
+          <span className="h-px w-8 bg-[#B87D29]/60" />
         </p>
 
         <h2
@@ -107,7 +107,7 @@ export default function CuisineSection() {
           style={reveal(160)}
         >
           La soirée commence par une{" "}
-          <span className="text-[#C99A45]">signature.</span>
+          <span className="text-[#B87D29]">signature.</span>
         </h2>
 
         <p
@@ -124,7 +124,7 @@ export default function CuisineSection() {
         <div style={reveal(380)}>
           <Link
             href="/cuisine"
-            className="group mt-11 inline-flex items-center gap-3 border border-[#C99A45]/50 px-8 py-4 font-[family-name:var(--font-mono)] text-[0.68rem] font-medium uppercase tracking-[0.3em] text-[#F5EAD6] transition-colors duration-300 hover:border-[#C99A45] hover:bg-[#C99A45] hover:text-[#722F38]"
+            className="group mt-11 inline-flex items-center gap-3 border border-[#B87D29]/50 px-8 py-4 font-[family-name:var(--font-mono)] text-[0.68rem] font-medium uppercase tracking-[0.3em] text-[#F5EAD6] transition-colors duration-300 hover:border-[#B87D29] hover:bg-[#B87D29] hover:text-[#722F38]"
           >
             L&apos;univers du Chef
             <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
