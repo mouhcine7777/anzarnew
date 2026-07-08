@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import localFont from "next/font/local";
+import { Geist, Geist_Mono, Marcellus } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,14 +12,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Brand title font. Path is relative to THIS file.
-//  - app/layout.tsx        -> "../public/fonts/tamil.ttf"
-//  - src/app/layout.tsx    -> "../../public/fonts/tamil.ttf"
-const tamil = localFont({
-  src: "../public/fonts/tamil.ttf",
+/**
+ * Brand title font.
+ * "latin-ext" is the subset that carries é è ê à â î ô ù ç — without it,
+ * French accents fall back to another font and look wrong mid-word.
+ * Marcellus ships a single weight (400).
+ */
+const marcellus = Marcellus({
+  weight: "400",
+  subsets: ["latin", "latin-ext"],
   variable: "--font-display",
   display: "swap",
-  fallback: ["Times New Roman", "serif"],
 });
 
 export const metadata: Metadata = {
@@ -36,7 +38,7 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
-      className={`${geistSans.variable} ${geistMono.variable} ${tamil.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${marcellus.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
