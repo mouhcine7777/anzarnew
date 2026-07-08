@@ -160,7 +160,7 @@ export default function Header() {
         </div>
 
         {/* Body: numbered nav (left) + metadata (right) */}
-        <div className="relative grid h-[calc(100%-160px)] grid-cols-1 content-start gap-10 overflow-y-auto px-6 py-10 md:grid-cols-[1.4fr_1fr] md:content-center md:items-end md:gap-12 md:overflow-visible md:px-12 md:py-0">
+        <div className="relative grid h-[calc(100%-72px)] grid-cols-1 content-center gap-8 px-6 py-6 md:h-[calc(100%-160px)] md:grid-cols-[1.4fr_1fr] md:items-end md:gap-12 md:px-12 md:py-0">
           {/* Nav */}
           <nav className="flex flex-col">
             {NAV.map((item, i) => (
