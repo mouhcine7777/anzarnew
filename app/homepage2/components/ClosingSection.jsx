@@ -278,7 +278,7 @@ export default function ClosingSection() {
                 <br />
                 <a href="tel:+212539336663" className="hover:text-[#B87D29]">+212 5 39 33 66 63</a>
                 <br />
-                <a href="mailto:reservations@anzar.com" className="hover:text-[#B87D29]">reservations@anzar.com</a>
+                <a href="mailto:reservations@anzar-morocco.com" className="hover:text-[#B87D29]">reservations@anzar-morocco.com</a>
               </p>
             </div>
           </div>
@@ -290,11 +290,18 @@ export default function ClosingSection() {
             </p>
             <div className="mt-9 flex flex-wrap items-center justify-center gap-x-14 gap-y-8">
               {[
-                { src: "/guepard.png", alt: "Guépard", cls: "h-7 md:h-7" },
-                { src: "/tangerino.png", alt: "Tangerino", cls: "h-7 md:h-7" },
-                { src: "/chiringuito.png", alt: "Chiringuito", cls: "h-10 md:h-12" },
+                { src: "/guepard.png", alt: "Guépard", cls: "h-7 md:h-7", href: "https://www.leguepard-tanger.com/" },
+                { src: "/tangerino.png", alt: "Tangerino", cls: "h-7 md:h-7", href: "https://tangerino-restaurant.com/" },
+                { src: "/chiringuito.png", alt: "Chiringuito", cls: "h-10 md:h-12", href: "https://chiringuito-tanger.com/" },
               ].map((l) => (
-                <div key={l.src} className="opacity-80">
+                <a
+                  key={l.src}
+                  href={l.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={l.alt}
+                  className="opacity-80 transition-opacity duration-300 hover:opacity-100"
+                >
                   <Image
                     src={l.src}
                     alt={l.alt}
@@ -302,7 +309,7 @@ export default function ClosingSection() {
                     height={52}
                     className={`${l.cls} w-auto object-contain`}
                   />
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -311,7 +318,7 @@ export default function ClosingSection() {
             <div className="flex items-center gap-6 text-[#F5EAD6]/55">
               <a href="https://instagram.com" aria-label="Instagram" className="hover:text-[#B87D29]"><Ig className="h-[18px] w-[18px]" /></a>
               <a href="https://wa.me/212666172897" aria-label="WhatsApp" className="hover:text-[#B87D29]"><Wa className="h-[18px] w-[18px]" /></a>
-              <a href="mailto:reservations@anzar.com" aria-label="Email" className="hover:text-[#B87D29]"><Mail className="h-[18px] w-[18px]" /></a>
+              <a href="mailto:reservations@anzar-morocco.com" aria-label="Email" className="hover:text-[#B87D29]"><Mail className="h-[18px] w-[18px]" /></a>
             </div>
             <p className="font-[family-name:var(--font-mono)] text-[0.56rem] uppercase tracking-[0.28em] text-[#F5EAD6]/45">
               © {new Date().getFullYear()} Anzar — Oriental Fine Dining &amp; Atmosphere

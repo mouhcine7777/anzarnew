@@ -236,7 +236,7 @@ export default function Header() {
               <a href="https://instagram.com" className="transition-colors hover:text-[#B87D29]">
                 Instagram
               </a>
-              <a href="mailto:reservations@anzar.com" className="transition-colors hover:text-[#B87D29]">
+              <a href="mailto:reservations@anzar-morocco.com" className="transition-colors hover:text-[#B87D29]">
                 Email
               </a>
             </div>

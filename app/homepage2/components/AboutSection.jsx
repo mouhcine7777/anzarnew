@@ -102,7 +102,8 @@ export default function UniversSection() {
           className="font-[family-name:var(--font-display)] text-[clamp(2.2rem,4.4vw,3.6rem)] font-light leading-[1.04] tracking-[-0.02em]"
           style={reveal(100)}
         >
-          Il y a des nuits que l&apos;on prévoit.{" "}
+          Il y a des nuits que l&apos;on prévoit.
+          <br />
           <span className="text-[#B87D29]">Et d&apos;autres qui s&apos;imposent.</span>
         </h2>
 
