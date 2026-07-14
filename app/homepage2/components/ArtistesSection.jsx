@@ -123,25 +123,11 @@ export default function ArtistesSection() {
                     className="group flex w-full items-center gap-5 border-t border-[#F5EAD6]/12 py-4 text-left last:border-b"
                   >
                     <span
-                      className={`font-[family-name:var(--font-mono)] text-[0.7rem] tracking-widest transition-colors ${
-                        on ? "text-[#B87D29]" : "text-[#F5EAD6]/40"
-                      }`}
-                    >
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <span
                       className={`flex-1 font-[family-name:var(--font-display)] text-[1.75rem] font-light tracking-tight transition-colors ${
                         on ? "text-[#F5EAD6]" : "text-[#F5EAD6]/45 group-hover:text-[#F5EAD6]/75"
                       }`}
                     >
                       {a.label}
-                    </span>
-                    <span
-                      className={`font-[family-name:var(--font-mono)] text-[0.58rem] uppercase tracking-[0.28em] transition-colors ${
-                        on ? "text-[#BC8B3A]" : "text-[#F5EAD6]/25"
-                      }`}
-                    >
-                      {a.sub}
                     </span>
                     <span
                       className={`h-px bg-[#B87D29] transition-all duration-500 ${on ? "w-8" : "w-0"}`}

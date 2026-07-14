@@ -33,6 +33,8 @@ const SLIDES = [
   { src: "/cuisine-3.jpg", alt: "Produits de saison" },
   { src: "/cuisine-4.jpg", alt: "Dressage minutieux" },
   { src: "/cuisine-5.jpg", alt: "Table dressée" },
+  { src: "/cuisine-6.jpg", alt: "Création du Chef" },
+  { src: "/cuisine-7.jpg", alt: "Assiette signature" },
 ];
 
 function AmazighStrip({ className = "", id = "anzar-amazigh-c" }) {

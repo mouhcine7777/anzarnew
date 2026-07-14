@@ -266,7 +266,7 @@ export default function ClosingSection() {
                 <br />
                 Live band &amp; shows
                 <br />
-                Cuisine orientale raffinée
+                Cuisine orientale
               </p>
             </div>
             <div>

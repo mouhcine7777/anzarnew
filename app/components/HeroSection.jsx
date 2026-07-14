@@ -124,19 +124,19 @@ export default function HeroSection() {
       <div className="relative z-20 mt-auto max-w-5xl px-6 pb-16 md:px-16 md:pb-20">
         <p className="anzar-fade anzar-d0 mb-6 flex items-center gap-4 font-[family-name:var(--font-mono)] text-[0.62rem] uppercase tracking-[0.4em] text-[#BC8B3A]">
           <span className="h-px w-8 bg-[#BC8B3A]/60" />
-          Dîner · Musique · Scène
+          Saveurs d&apos;Orient · Performances Artistiques · Art de Recevoir
         </p>
 
         <h1 className="font-[family-name:var(--font-display)] text-[clamp(2.4rem,5.2vw,4.4rem)] font-light leading-[0.96] tracking-[-0.025em]">
           <span className="anzar-line block overflow-hidden">
-            <span className="anzar-line-inner anzar-l1 block">Il y a des nuits</span>
+            <span className="anzar-line-inner anzar-l1 block">Ici, chaque nuit</span>
           </span>
           <span className="anzar-line block overflow-hidden">
-            <span className="anzar-line-inner anzar-l2 block">que l&apos;on prévoit.</span>
+            <span className="anzar-line-inner anzar-l2 block">devient</span>
           </span>
           <span className="anzar-line mt-1 block overflow-hidden md:mt-2">
             <span className="anzar-line-inner anzar-l3 block text-[#B87D29]">
-              Et d&apos;autres qui s&apos;imposent.
+              un souvenir.
             </span>
           </span>
         </h1>

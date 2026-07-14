@@ -28,12 +28,12 @@ const GRAIN =
   "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")";
 
 const NAV = [
-  { label: "L'univers", href: "/univers" },
-  { label: "Artistes", href: "/artistes" },
-  { label: "Cuisine", href: "/cuisine" },
+  { label: "L'univers Anzar", href: "/univers" },
+  { label: "Nos Artistes", href: "/artistes" },
+  { label: "La Cuisine", href: "/cuisine" },
   { label: "Notre carte", href: "/carte" },
   { label: "Le Bar", href: "/bar" },
-  { label: "Salon VIP", href: "/vip" },
+  { label: "Salons VIP", href: "/vip" },
 ];
 
 export default function Header() {
@@ -177,9 +177,6 @@ export default function Header() {
                   transitionDuration: "700ms",
                 }}
               >
-                <span className="font-[family-name:var(--font-mono)] text-[0.7rem] tracking-widest text-[#BC8B3A]/70">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
                 <span className="font-[family-name:var(--font-display)] text-[clamp(1.6rem,5vw,3.6rem)] font-light leading-none tracking-[-0.02em] text-[#EFE7D6] transition-colors group-hover:text-[#B87D29] group-hover:italic">
                   {item.label}
                 </span>
@@ -223,9 +220,15 @@ export default function Header() {
               </p>
               <a
                 href="tel:+212666172897"
-                className="font-[family-name:var(--font-display)] text-lg font-light text-[#EFE7D6]/85 transition-colors hover:text-[#B87D29]"
+                className="block font-[family-name:var(--font-display)] text-lg font-light text-[#EFE7D6]/85 transition-colors hover:text-[#B87D29]"
               >
                 +212 6 66 17 28 97
+              </a>
+              <a
+                href="tel:+212539336663"
+                className="mt-1 block font-[family-name:var(--font-display)] text-lg font-light text-[#EFE7D6]/85 transition-colors hover:text-[#B87D29]"
+              >
+                +212 5 39 33 66 63
               </a>
             </div>
 
