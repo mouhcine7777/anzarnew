@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 import { Archivo, Poppins } from "next/font/google";
 
 /**
- * ANZAR — Desserts hero. Scrolls to <div id="desserts-menu-section">.
- * Image: /public/desserts.jpg
+ * ANZAR — "Boissons & Softs" hero. Scrolls to <div id="boissons-menu-section">.
+ * Image: /public/cocktails.jpg
  */
 
 const mono = Archivo({ subsets: ["latin"], weight: ["300", "400", "500", "600"], variable: "--font-mono", display: "swap" });
@@ -18,9 +18,9 @@ const GRAIN =
 
 const ease: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
-const DessertsHero = () => {
+const BoissonsHero = () => {
   const scrollToMenu = () => {
-    document.getElementById("desserts-menu-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    document.getElementById("boissons-menu-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
@@ -34,7 +34,7 @@ const DessertsHero = () => {
         transition={{ duration: 1.6, ease }}
         className="absolute inset-0"
       >
-        <Image src="/cuisine-7.jpg" alt="Desserts d'Anzar" fill priority sizes="100vw" className="object-cover object-center" />
+        <Image src="/cocktails.jpg" alt="Boissons & softs d'Anzar" fill priority sizes="100vw" className="object-cover object-center" />
       </motion.div>
 
       {/* Wine grade — the ramp carries higher, and a soft scrim sits under the
@@ -61,12 +61,12 @@ const DessertsHero = () => {
             transition={{ duration: 0.9, delay: 0.35, ease }}
             className="font-[family-name:var(--font-display)] text-[clamp(2.8rem,6vw,4.6rem)] font-light leading-[1.02] tracking-[-0.01em]"
           >
-            Douceurs
+            Boissons
             <br />
-            <span className="text-[#B87D29]">&amp; desserts</span>
+            <span className="text-[#B87D29]">&amp; softs</span>
           </motion.h1>
 
-          {/* line under "desserts" */}
+          {/* line under "& softs" */}
           <motion.span
             initial={{ width: 0, opacity: 0 }}
             animate={{ width: 110, opacity: 1 }}
@@ -80,8 +80,8 @@ const DessertsHero = () => {
             transition={{ duration: 0.9, delay: 0.7, ease }}
             className="mt-7 max-w-md font-[family-name:var(--font-body)] text-[1rem] font-light leading-relaxed text-[#F5EAD6]/80"
           >
-            Terminez la soirée en beauté avec nos desserts, préparés maison entre
-            tradition orientale et créations signature.
+            Une sélection de boissons sans alcool, fraîches et raffinées, pour
+            éveiller le palais.
           </motion.p>
 
           <motion.div
@@ -93,7 +93,7 @@ const DessertsHero = () => {
               onClick={scrollToMenu}
               className="group mt-10 inline-flex items-center gap-3 border border-[#B87D29]/60 px-9 py-4 font-[family-name:var(--font-mono)] text-[0.68rem] font-medium uppercase tracking-[0.3em] text-[#F5EAD6] transition-colors duration-300 hover:border-[#B87D29] hover:bg-[#B87D29] hover:text-[#1E0709]"
             >
-              Voir les desserts
+              Voir les boissons
               <span className="transition-transform duration-300 group-hover:translate-y-0.5">↓</span>
             </button>
           </motion.div>
@@ -122,4 +122,4 @@ const DessertsHero = () => {
   );
 };
 
-export default DessertsHero;
+export default BoissonsHero;

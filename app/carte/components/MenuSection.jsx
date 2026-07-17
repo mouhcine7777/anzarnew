@@ -25,7 +25,7 @@ const body = Poppins({
 
 const CATEGORIES = [
   { title: "Boissons & Softs", image: "/cocktails.jpg", description: "Une sélection de boissons sans alcool, fraîches et raffinées, pour éveiller le palais.", href: "/carte/menu/boissons" },
-  { title: "Cocktails", image: "/bar.jpg", description: "Des signatures imaginées comme des compositions, entre spiritueux d'exception et ingrédients choisis.", href: "/carte/menu/cocktails" },
+  { title: "Cocktails & Shots", image: "/bar.jpg", description: "Des signatures imaginées comme des compositions, entre spiritueux d'exception et ingrédients choisis.", href: "/carte/menu/cocktails" },
   { title: "Champagnes & Vins", image: "/champagne-wines.jpg", description: "Champagnes d'exception et grands crus, sélectionnés parmi les plus belles maisons.", href: "/carte/menu/champagnes-vins" },
   { title: "Bières & Alcools", image: "/beers-drinks.jpg", description: "Bières et spiritueux d'exception, une collection pour chaque instant de la soirée.", href: "/carte/menu/bieres-alcools" },
   { title: "À partager", image: "/cuisine-1.jpg", description: "Des créations conviviales à partager, pensées pour ouvrir la soirée en douceur.", href: "/carte/menu/a-partager" },

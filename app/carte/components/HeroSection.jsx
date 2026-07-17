@@ -51,9 +51,11 @@ export default function CarteHero() {
         <Image src="/carte.jpg" alt="La carte d'Anzar" fill priority sizes="100vw" className="object-cover object-center" />
       </motion.div>
 
-      {/* Wine grade */}
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(30,7,9,0.7)_0%,rgba(30,7,9,0.4)_40%,rgba(30,7,9,0.85)_100%)]" />
+      {/* Wine grade — the last layer is a soft scrim behind the centred copy,
+          so it stays legible over bright or warm images. */}
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(30,7,9,0.7)_0%,rgba(30,7,9,0.45)_40%,rgba(30,7,9,0.85)_100%)]" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_38%,rgba(18,5,6,0.8)_100%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(58%_48%_at_50%_50%,rgba(30,7,9,0.72)_0%,rgba(30,7,9,0.32)_62%,transparent_82%)]" />
       <div
         className="pointer-events-none absolute inset-0 z-[1] opacity-[0.09] mix-blend-overlay"
         style={{ backgroundImage: GRAIN, backgroundSize: "140px 140px" }}

@@ -20,7 +20,7 @@ const GRAIN =
 
 const CATEGORIES = [
   { category: "Boissons & Softs", link: "/carte/menu/boissons" },
-  { category: "Cocktails", link: "/carte/menu/cocktails" },
+  { category: "Cocktails & Shots", link: "/carte/menu/cocktails" },
   { category: "Champagnes & Vins", link: "/carte/menu/champagnes-vins" },
   { category: "Bières & Alcools", link: "/carte/menu/bieres-alcools" },
   { category: "À partager", link: "/carte/menu/a-partager" },
@@ -29,7 +29,7 @@ const CATEGORIES = [
   { category: "Les Desserts", link: "/carte/menu/desserts" },
 ];
 
-export default function CarteNav({ selectedCategory = null }) {
+export default function CarteNav({ selectedCategory = "" }) {
   const [open, setOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
 
