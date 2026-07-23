@@ -100,8 +100,9 @@ export default function CarteHero() {
           transition={{ duration: 0.9, delay: 0.95, ease }}
           className="mt-6 max-w-xl font-[family-name:var(--font-body)] text-[0.98rem] font-light leading-relaxed text-[#F5EAD6]/80 md:text-lg"
         >
-          Cuisine orientale — saveurs authentiques, produits de saison et
-          créations pensées pour accompagner le rythme de la soirée.
+          Cuisine marocaine & internationale — une rencontre entre héritage,
+          créativité et produits soigneusement sélectionnés, imaginée pour
+          accompagner chaque instant de la soirée.
         </motion.p>
 
         {/* CTA */}
