@@ -6,7 +6,7 @@ import { Archivo, Poppins } from "next/font/google";
 
 /**
  * ANZAR — "Cocktails & Shots" menu. Mirrors the Desserts page structure.
- * Four sections: Cocktails Classiques, Cocktails Signatures, Chich Cocktails, Meter Shots.
+ * Four sections: Cocktails Classiques, Cocktails Signatures, Chich Cocktails, Shots.
  * Signature ingredient lines come from the carte.
  */
 
@@ -19,6 +19,7 @@ const GRAIN =
 interface MenuItem {
   name: string;
   price: number;
+  price2?: number;
   description?: string;
   detailedDescription?: string;
 }
@@ -30,6 +31,7 @@ interface MenuSection {
 const CarteMenuItem: React.FC<MenuItem & { onExpand: () => void; isExpanded: boolean }> = ({
   name,
   price,
+  price2,
   description,
   detailedDescription,
   onExpand,
@@ -57,9 +59,30 @@ const CarteMenuItem: React.FC<MenuItem & { onExpand: () => void; isExpanded: boo
         <h3 className="font-[family-name:var(--font-display)] text-[1.35rem] font-light leading-snug tracking-tight text-[#F5EAD6] transition-colors duration-300 group-hover:text-[#B87D29]">
           {name}
         </h3>
-        <span className="shrink-0 font-[family-name:var(--font-mono)] text-[0.95rem] font-light tracking-wide text-[#B87D29]">
-          {price}
-        </span>
+        {price2 !== undefined ? (
+          <div className="flex shrink-0 items-baseline gap-4">
+            <span className="flex flex-col items-center gap-0.5">
+              <span className="font-[family-name:var(--font-mono)] text-[0.5rem] uppercase tracking-[0.2em] text-[#B87D29]/50">
+                1 Shot
+              </span>
+              <span className="font-[family-name:var(--font-mono)] text-[0.95rem] font-light tracking-wide text-[#B87D29]">
+                {price}
+              </span>
+            </span>
+            <span className="flex flex-col items-center gap-0.5">
+              <span className="font-[family-name:var(--font-mono)] text-[0.5rem] uppercase tracking-[0.2em] text-[#B87D29]/50">
+                Meter
+              </span>
+              <span className="font-[family-name:var(--font-mono)] text-[0.95rem] font-light tracking-wide text-[#B87D29]">
+                {price2}
+              </span>
+            </span>
+          </div>
+        ) : (
+          <span className="shrink-0 font-[family-name:var(--font-mono)] text-[0.95rem] font-light tracking-wide text-[#B87D29]">
+            {price}
+          </span>
+        )}
       </div>
 
       {description && (
@@ -157,6 +180,7 @@ const CocktailsMenu: React.FC = () => {
         { name: "Aperol spritz", price: 200 },
         { name: "Sex on the beach", price: 200 },
         { name: "Moskow mule", price: 200 },
+        { name: "St Germain Spritz", price: 200 },
       ],
     },
     {
@@ -232,12 +256,13 @@ const CocktailsMenu: React.FC = () => {
       ],
     },
     {
-      title: "Meter Shots",
+      title: "Shots",
       items: [
-        { name: "Tequila", price: 900 },
-        { name: "Passion Vodka", price: 900 },
-        { name: "Sambuca", price: 900 },
-        { name: "Jagermeister", price: 900 },
+        { name: "Tequila", price: 100, price2: 900 },
+        { name: "Passion Vodka", price: 100, price2: 900 },
+        { name: "Sambuca", price: 100, price2: 900 },
+        { name: "Jagermeister", price: 100, price2: 900 },
+        { name: "B52", price: 100, price2: 900 },
       ],
     },
   ];

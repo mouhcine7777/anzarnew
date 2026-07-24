@@ -121,7 +121,6 @@ const aperitifs: DrinkItem[] = [
   { name: "Amaretto Disaronno", prices: [150, 2000] },
   { name: "Get 27", prices: [100, 2000] },
   { name: "Limoncello", prices: [100, "–"] },
-  { name: "B52", prices: [100, "–"] },
 ];
 
 const bieres: DrinkItem[] = [
